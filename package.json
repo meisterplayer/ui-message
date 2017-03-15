@@ -1,0 +1,22 @@
+{
+  "name": "@npm-wearetriple/meister-plugin-message",
+  "version": "1.0.0",
+  "description": "Message overlay plugin for Meister",
+  "main": "dist/Message.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "meister",
+    "video",
+    "plugin",
+    "ui"
+  ],
+  "author": "Triple",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@npm-wearetriple/gulp-webpack-tasks": "^1.0.0",
+    "@npm-wearetriple/js-dev": "^3.1.0",
+    "gulp": "^3.9.1"
+  }
+}
