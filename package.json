@@ -1,6 +1,6 @@
 {
-  "name": "@npm-wearetriple/meister-plugin-message",
-  "version": "1.0.0",
+  "name": "meister-plugin-message",
+  "version": "5.0.0",
   "description": "Message overlay plugin for Meister",
   "main": "dist/Message.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "plugin",
     "ui"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meisterplayer/ui-message.git"
+  },
   "author": "Triple",
   "license": "Apache-2.0",
   "devDependencies": {
