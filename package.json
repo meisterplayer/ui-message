@@ -1,13 +1,9 @@
 {
   "name": "meister-plugin-message",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Message overlay plugin for Meister",
   "main": "dist/Message.js",
   "keywords": [
-    "meister",
-    "video",
-    "plugin",
-    "ui"
   ],
   "repository": {
     "type": "git",
@@ -16,10 +12,5 @@
   "author": "Triple",
   "license": "Apache-2.0",
   "devDependencies": {
-    "meister-gulp-webpack-tasks": "^1.0.0",
-    "meister-js-dev": "^3.1.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-es2017": "^6.22.0",
-    "gulp": "^3.9.1"
   }
 }
