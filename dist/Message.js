@@ -178,7 +178,6 @@ var Message = function (_Meister$UiPlugin) {
     return Message;
 }(Meister.UiPlugin);
 
-Meister.registerPlugin('message', Message);
 Meister.registerPlugin(Message.pluginName, Message);
 
 // Expose the MessageStore through the Meister object.
