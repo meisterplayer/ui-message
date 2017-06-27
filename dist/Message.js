@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -106,6 +106,10 @@ var _MessageStore2 = _interopRequireDefault(_MessageStore);
 var _template = __webpack_require__(2);
 
 var _template2 = _interopRequireDefault(_template);
+
+var _package = __webpack_require__(4);
+
+var _package2 = _interopRequireDefault(_package);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -172,6 +176,11 @@ var Message = function (_Meister$UiPlugin) {
         key: 'pluginName',
         get: function get() {
             return 'Message';
+        }
+    }, {
+        key: 'pluginVersion',
+        get: function get() {
+            return _package2.default.version;
         }
     }]);
 
@@ -267,6 +276,36 @@ exports.default = MessageStore;
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"name": "@meisterplayer/plugin-message",
+	"version": "5.2.0",
+	"description": "Message overlay plugin for Meister",
+	"main": "dist/Message.js",
+	"keywords": [
+		"meister",
+		"video",
+		"plugin",
+		"ui"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/meisterplayer/ui-message.git"
+	},
+	"author": "Triple",
+	"license": "Apache-2.0",
+	"devDependencies": {
+		"meister-gulp-webpack-tasks": "^1.0.0",
+		"meister-js-dev": "^3.1.0",
+		"babel-preset-es2015": "^6.24.0",
+		"babel-preset-es2017": "^6.22.0",
+		"gulp": "^3.9.1"
+	}
+};
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);
