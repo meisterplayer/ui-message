@@ -1,5 +1,6 @@
 import MessageStore from './utils/MessageStore';
 import Template from './template.build';
+import packageJson from '../../package.json';
 
 class Message extends Meister.UiPlugin {
     constructor(config, meister) {
@@ -22,6 +23,10 @@ class Message extends Meister.UiPlugin {
 
     static get pluginName() {
         return 'Message';
+    }
+
+    static get pluginVersion() {
+        return packageJson.version;
     }
 
     onItemUnloaded() {
