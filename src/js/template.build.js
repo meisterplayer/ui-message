@@ -10,4 +10,5 @@ const template = `<div class="pf-error-message-plugin">
     </div>
 </div>
 `;
+
 export default template;
