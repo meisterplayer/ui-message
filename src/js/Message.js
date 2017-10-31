@@ -15,7 +15,7 @@ class Message extends Meister.UiPlugin {
         this.message = this.wrapper.querySelector('#pf-error-message');
         this.errorCode = this.wrapper.querySelector('#pf-error-code');
 
-        this.defaultHeadTitle = this.config.defaultHeadTitle || 'Whoops, something went wrong...';
+        this.defaultHeadTitle = this.config.defaultHeadTitle || meister.Localization.get('SOMETHING_WENT_WRONG');
 
         this.on('error', this.onError.bind(this));
         this.on('itemUnloaded', this.onItemUnloaded.bind(this));
