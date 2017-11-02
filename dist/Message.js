@@ -136,7 +136,7 @@ var Message = function (_Meister$UiPlugin) {
         _this.message = _this.wrapper.querySelector('#pf-error-message');
         _this.errorCode = _this.wrapper.querySelector('#pf-error-code');
 
-        _this.defaultHeadTitle = _this.config.defaultHeadTitle || 'Whoops, something went wrong...';
+        _this.defaultHeadTitle = _this.config.defaultHeadTitle || meister.Localization.get('SOMETHING_WENT_WRONG');
 
         _this.on('error', _this.onError.bind(_this));
         _this.on('itemUnloaded', _this.onItemUnloaded.bind(_this));
@@ -205,6 +205,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var template = "<div class=\"pf-error-message-plugin\">\n    <div class=\"pf-error-wrapper\">\n        <h1 id=\"pf-error-head-title\">Whoops, something went wrong...</h1>\n        <h2 id=\"pf-error-title\"></h2>\n        <span id=\"pf-error-message\" class=\"pf-error-message\"></span>\n    </div>\n    <div class=\"pf-error-code-wrapper\">\n        <span class=\"pf-error-code-title\">Code:</span>\n        <span id=\"pf-error-code\" class=\"pf-error-code\">ERR-9001</span>\n    </div>\n</div>\n";
+
 exports.default = template;
 
 /***/ }),
@@ -280,7 +281,7 @@ exports.default = MessageStore;
 
 module.exports = {
 	"name": "@meisterplayer/plugin-message",
-	"version": "5.2.0",
+	"version": "5.3.0",
 	"description": "Message overlay plugin for Meister",
 	"main": "dist/Message.js",
 	"keywords": [
